@@ -39,3 +39,7 @@ elements.each do |name_hash|
 end
 return arr
 end
+
+def merge_data(keys, data)
+  
+end
