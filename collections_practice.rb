@@ -26,6 +26,16 @@ def remove_non_strings(elements)
 end
 
 def count_elements(elements)
-  count = 2
-  return count
+arr = []
+elements = [{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}]
+arr = elements.uniq
+elements.each do |name_hash|
+  name_hash[:count] = 0
+  arr.each do |x|
+    if x[:name] == name_hash[:name]
+      x[:count] += 1
+    end
+  end
+end
+return arr
 end
