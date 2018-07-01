@@ -47,7 +47,6 @@ keys.each do |people|
     name_key.each do |x, y|
       if people[:first_name] == x
         hash <<  {:first_name => x, :awesomeness => y[:awesomeness], :height => y[:height], :last_name => y[:last_name]}
-        #hash[people].merge(y){|key,old,new| old + new}
       end
     end
   end
