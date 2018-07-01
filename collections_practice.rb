@@ -65,5 +65,19 @@ return hash
 end
 
 def organize_schools(data)
-  
+  hash = {}
+data.each do |school, location|
+  location.each do |location_key, place|
+    if hash[place].nil?
+      hash[place] = []
+    end
+
+    if location[:location] == place
+      if !(hash[place].include?(school))
+        hash[place] << school
+      end
+    end
+  end
+end
+puts hash
 end
