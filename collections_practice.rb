@@ -41,5 +41,16 @@ return arr
 end
 
 def merge_data(keys, data)
-  
+  keys.each do |people|  
+
+data.each do |name_key|
+name_key.each do |x,y| 
+
+if people[:first_name] == x
+people.merge(y)
+end
+end
+end
+return keys
+end
 end
