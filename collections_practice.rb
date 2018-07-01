@@ -79,5 +79,5 @@ data.each do |school, location|
     end
   end
 end
-puts hash
+return hash
 end
