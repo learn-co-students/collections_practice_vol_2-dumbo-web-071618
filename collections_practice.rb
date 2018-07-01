@@ -41,16 +41,16 @@ return arr
 end
 
 def merge_data(keys, data)
-  keys.each do |people|  
-
-data.each do |name_key|
-name_key.each do |x,y| 
-
-if people[:first_name] == x
-people.merge(y)
+hash = []
+keys.each do |people|
+  data.each do |name_key|
+    name_key.each do |x, y|
+      if people[:first_name] == x
+        hash <<  {:first_name => x, :awesomeness => y[:awesomeness], :height => y[:height], :last_name => y[:last_name]}
+        #hash[people].merge(y){|key,old,new| old + new}
+      end
+    end
+  end
 end
-end
-end
-return keys
-end
+return hash
 end
