@@ -63,3 +63,7 @@ data.each do |hashes|
 end
 return hash
 end
+
+def organize_schools(data)
+  
+end
