@@ -55,5 +55,11 @@ return hash
 end
 
 def find_cool(data)
-  
+hash = []
+data.each do |hashes|
+  if hashes[:temperature] == "cool"
+    hash.push(hashes)
+  end
+end
+return hash
 end
