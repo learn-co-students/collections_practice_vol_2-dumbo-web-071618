@@ -53,3 +53,7 @@ keys.each do |people|
 end
 return hash
 end
+
+def find_cool(data)
+  
+end
